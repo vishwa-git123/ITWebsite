@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Book </title>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="https://kit.fontawesome.com/200f14c6fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/e-pub-development.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/animation.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="https://kit.fontawesome.com/200f14c6fd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+ 
+  <header class="pnb-header">
+    <div class="pnb-container">
+      <nav class="pnb-navbar">
+        <!-- Logo -->
+        <div class="pnb-brand">
+          <a href="#" class="pnb-logo-link">
+            <img src="./images/Yellow_and_Grey_Square_Business_Logo.png" alt="Company Logo" class="pnb-logo">
+          </a>
+          <button class="pnb-toggler" aria-label="Toggle navigation">
+            <span class="pnb-toggler-icon"></span>
+          </button>
+        </div>
+  
+        <!-- Main Navigation -->
+        <div class="pnb-nav-container">
+          <ul class="pnb-nav-list">
+            <!-- Home -->
+            <li class="pnb-nav-item">
+              <a href="./index.html" class="pnb-nav-link">HOME</a>
+              <div class="pnb-mega-dropdown">
+                <div class="pnb-dropdown-content">
+                  <div class="pnb-dropdown-preview">
+                    <img src="./navbar/home-screen-nav-bar.png" alt="Home" class="pnb-dropdown-img">
+                  </div>
+                  <div class="pnb-dropdown-text">
+                    <p>Innovative IT & e-Publishing Solutions for Business Growth. Expert team, tailored services, measurable results.</p>
+                    <a href="./index.html" class="pnb-dropdown-btn">Explore Home</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <!-- About -->
+            <li class="pnb-nav-item">
+              <a href="./about.html" class="pnb-nav-link">ABOUT</a>
+              <div class="pnb-mega-dropdown">
+                <div class="pnb-dropdown-content">
+                  <div class="pnb-dropdown-preview">
+                    <img src="./navbar/About-Nav-Bar.png" alt="About" class="pnb-dropdown-img">
+                  </div>
+                  <div class="pnb-dropdown-text">
+                    <p>We offer IT and ePublishing solutions that help businesses thrive in the digital world, driving growth, efficiency, and long-term success.</p>
+                    <a href="./about.html" class="pnb-dropdown-btn">Learn About Us</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <!-- Services Mega Menu -->
+            <li class="pnb-nav-item pnb-nav-dropdown">
+              <a href="#" class="pnb-nav-link">SERVICES <span class="pnb-dropdown-arrow">⌄</span></a>
+              <div class="pnb-mega-menu">
+                <div class="pnb-mega-grid">
+                  <!-- Web Development -->
+                  <div class="pnb-service-card">
+                    <a href="./web_development.html" class="pnb-service-link">
+                      <div class="pnb-service-icon">
+                        <img src="./navbar/Web-Development-Nav-Bar.png" alt="Web Development" class="pnb-service-img">
+                      </div>
+                      <h4 class="pnb-service-title">Web Development</h4>
+                      <p class="pnb-service-desc">At DCI Technologies, we create modern, high-performing websites tailored to your business needs.</p>
+                      <span class="pnb-service-arrow">→</span>
+                    </a>
+                  </div>
+  
+                  <!-- App Development -->
+                  <div class="pnb-service-card">
+                    <a href="./mobile-app-development.html" class="pnb-service-link">
+                      <div class="pnb-service-icon">
+                        <img src="./navbar/mobile-development-nav-bar.png" alt="App Development" class="pnb-service-img">
+                      </div>
+                      <h4 class="pnb-service-title">App Development</h4>
+                      <p class="pnb-service-desc">We develop advanced mobile and web applications that enhance user engagement and drive business growth.</p>
+                      <span class="pnb-service-arrow">→</span>
+                    </a>
+                  </div>
+  
+                  <!-- Digital Marketing -->
+                  <div class="pnb-service-card">
+                    <a href="./digital-marketing.html" class="pnb-service-link">
+                      <div class="pnb-service-icon">
+                        <img src="./navbar/digital-marketing-nav-bar.png" alt="Digital Marketing" class="pnb-service-img">
+                      </div>
+                      <h4 class="pnb-service-title">Digital Marketing</h4>
+                      <p class="pnb-service-desc">We create tailored digital marketing strategies that connect your brand with the right audience.</p>
+                      <span class="pnb-service-arrow">→</span>
+                    </a>
+                  </div>
+  
+                  <!-- Design Services -->
+                  <div class="pnb-service-card">
+                    <a href="./ui-ux-desinging.html" class="pnb-service-link">
+                      <div class="pnb-service-icon">
+                        <img src="./navbar/Designs-Nav-Bar.png" alt="Design Services" class="pnb-service-img">
+                      </div>
+                      <h4 class="pnb-service-title">Design Services</h4>
+                      <p class="pnb-service-desc">Transform Your Ideas into Stunning Visuals and accelerate your success.</p>
+                      <span class="pnb-service-arrow">→</span>
+                    </a>
+                  </div>
+  
+                  <!-- SEO Marketing -->
+                  <div class="pnb-service-card">
+                    <a href="./seo.html" class="pnb-service-link">
+                      <div class="pnb-service-icon">
+                        <img src="./navbar/Seo-Nav-bar.png" alt="SEO Marketing" class="pnb-service-img">
+                      </div>
+                      <h4 class="pnb-service-title">SEO Marketing</h4>
+                      <p class="pnb-service-desc">We use proven SEO strategies to boost your online visibility and drive measurable conversions.</p>
+                      <span class="pnb-service-arrow">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <!-- E-Publishing -->
+            <li class="pnb-nav-item">
+              <a href="./e-pub-development.html" class="pnb-nav-link">E-PUBLISHING</a>
+              <div class="pnb-mega-dropdown">
+                <div class="pnb-dropdown-content">
+                  <div class="pnb-dropdown-preview">
+                    <img src="./navbar/Web-Development-Nav-Bar.png" alt="E-Publishing" class="pnb-dropdown-img">
+                  </div>
+                  <div class="pnb-dropdown-text">
+                    <p>We help businesses and authors publish, distribute, and monetize digital content, delivering impactful solutions for eBooks, magazines, and multimedia.</p>
+                    <a href="./e-pub-development.html" class="pnb-dropdown-btn">Discover E-Publishing</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <!-- Career -->
+            <li class="pnb-nav-item">
+              <a href="./career.html" class="pnb-nav-link">CAREER</a>
+              <div class="pnb-mega-dropdown">
+                <div class="pnb-dropdown-content">
+                  <div class="pnb-dropdown-preview">
+                    <img src="./navbar/career-Nav-Bar.png" alt="Career" class="pnb-dropdown-img">
+                  </div>
+                  <div class="pnb-dropdown-text">
+                    <p>Join our team at DCI Technologies! We're looking for passionate individuals to help drive innovation in IT, ePublishing, and digital solutions.</p>
+                    <a href="./career.html" class="pnb-dropdown-btn">View Careers</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <!-- Contact -->
+            <li class="pnb-nav-item">
+              <a href="./contact.html" class="pnb-nav-link">CONTACT</a>
+              <div class="pnb-mega-dropdown">
+                <div class="pnb-dropdown-content">
+                  <div class="pnb-dropdown-preview">
+                    <img src="./navbar/Contact--Nav-Bar.png" alt="Contact" class="pnb-dropdown-img">
+                  </div>
+                  <div class="pnb-dropdown-text">
+                    <p>Get in touch with DCI Technologies! We'd love to hear from you. Whether you have questions or need support, our team is here to help.</p>
+                    <a href="./contact.html" class="pnb-dropdown-btn">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+  
+          <!-- CTA Button -->
+          <div class="pnb-cta">
+            <a href="./contact.html" class="pnb-cta-btn">START WITH US</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- header completed -->
+
+      <!-- header completed -->
+
+      <section class="digital-publishing-hero">
+        <div class="dp-hero-background">
+            <img src="./images/WebDevelopment/WebDevHeaderBack.png" alt="Background" class="dp-bg-image">
+            <img src="./images/WebDevelopment/vector_2.png" alt="Vector" class="dp-vector dp-vector-2">
+            <img src="./images/WebDevelopment/vector_1.png" alt="Vector" class="dp-vector dp-vector-1">
+            <img src="./images/WebDevelopment/vector_3.png" alt="Vector" class="dp-vector dp-vector-3">
+        </div>
+        
+        <div class="dp-hero-content">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 dp-text-content" data-aos="fade-right" data-aos-duration="1000">
+                        <h1 class="dp-main-heading">Digital Publishing Services for the Next Generation of Content</h1>
+                        <p class="dp-main-description">We specialize in helping businesses, authors, organizations, and institutions publish, distribute, and monetize digital content across the web. From eBooks and digital magazines to interactive publications and multimedia content, we deliver cutting-edge digital publishing solutions that empower your content to reach a global audience with exceptional quality and impact.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 dp-image-container" data-aos="zoom-in-up" data-aos-duration="700">
+                        <img src="./images/E-BookDevelopment/E-PubBanner.png" alt="Digital Publishing" class="dp-main-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="dp-services-grid">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 dp-service-card" data-aos="zoom-in" data-aos-duration="500">
+                    <div class="dp-card-inner">
+                        <div class="dp-icon-wrapper">
+                            <img src="./images/E-BookDevelopment/Ebook_Reader-iconSvg.co.png" alt="Ebook Reader Icon" class="dp-service-icon">
+                        </div>
+                        <h3 class="dp-service-title">Ebook Conversions</h3>
+                        <p class="dp-service-description">Transform your content into multiple ebook formats for all devices and platforms.</p>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 dp-service-card" data-aos="zoom-in" data-aos-duration="700">
+                    <div class="dp-card-inner">
+                        <div class="dp-icon-wrapper">
+                            <img src="./images/E-BookDevelopment/Edit-Icon.png" alt="Edit Icon" class="dp-service-icon">
+                        </div>
+                        <h3 class="dp-service-title">Editorial Services</h3>
+                        <p class="dp-service-description">Professional editing and proofreading to ensure your content is polished and professional.</p>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 dp-service-card" data-aos="zoom-in" data-aos-duration="900">
+                    <div class="dp-card-inner">
+                        <div class="dp-icon-wrapper">
+                            <img src="./images/E-BookDevelopment/Xml_Schema-iconSvg.co.png" alt="XML Icon" class="dp-service-icon">
+                        </div>
+                        <h3 class="dp-service-title">Accessibility / XML Conversion</h3>
+                        <p class="dp-service-description">Make your content accessible to all readers with compliant formatting and structure.</p>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 dp-service-card" data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="dp-card-inner">
+                        <div class="dp-icon-wrapper">
+                            <img src="./images/E-BookDevelopment/Desktop_Wallpaper-iconSvg.co.png" alt="Desktop Icon" class="dp-service-icon">
+                        </div>
+                        <h3 class="dp-service-title">DTP Technologies</h3>
+                        <p class="dp-service-description">Advanced desktop publishing solutions for professional-quality layouts.</p>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 dp-service-card" data-aos="zoom-in" data-aos-duration="1300">
+                    <div class="dp-card-inner">
+                        <div class="dp-icon-wrapper">
+                            <img src="./images/E-BookDevelopment/Group.png" alt="Icon" class="dp-service-icon">
+                        </div>
+                        <h3 class="dp-service-title">Extensive Proofreading</h3>
+                        <p class="dp-service-description">Detailed proofreading to eliminate errors and ensure consistency.</p>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 dp-service-card" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="dp-card-inner">
+                        <div class="dp-icon-wrapper">
+                            <img src="./images/E-BookDevelopment/Solution_Software-conSvg.co.png" alt="Solution Icon" class="dp-service-icon">
+                        </div>
+                        <h3 class="dp-service-title">End-to-End Solutions</h3>
+                        <p class="dp-service-description">Comprehensive publishing services from concept to distribution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  sec 1 and 2 comoleted -->
+    <section class="ebook-conversion-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 conversion-intro">
+                    <h3 class="conversion-title">E-Book Conversions</h3>
+                    <p class="conversion-description">The whole e-Book production is under the control of our experienced staff, handling the entire process from content presentation, encoding, HTML5/CSS3 implementation, editing, to image optimization and illustrations.</p>
+                </div>
+                <div class="col-lg-12 conversion-hero-image">
+                    <img src="./images/E-BookDevelopment/E-Book_Conversion.png" alt="E-book Conversion Process" class="img-fluid pulse-animation">
+                </div>
+            </div>
+        </div>
+    
+        <div class="conversion-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="conversion-card">
+                            <div class="conversion-icon">
+                                <img src="./images/E-BookDevelopment/Conversion.png" alt="ePub Conversion">
+                            </div>
+                            <h4>E-PUB Conversion</h4>
+                            <p>Our expert ePub conversion services ensure your content is accessible, compatible, and professional. Reflowable ePub format adapts seamlessly to different screen sizes for an optimal reading experience.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="conversion-card">
+                            <div class="conversion-icon">
+                                <img src="./images/E-BookDevelopment/FixedLayout.png" alt="Fixed Layout Conversion">
+                            </div>
+                            <h4>Fixed Layout e-Pub Conversions</h4>
+                            <p>Fixed-layout ePub is ideal for content where design and layout are as important as text. Our specialized services ensure your content retains its visual integrity while delivering an exceptional reading experience.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="conversion-card">
+                            <div class="conversion-icon">
+                                <img src="./images/E-BookDevelopment/E-Pub.png" alt="Enhanced ePub">
+                            </div>
+                            <h4>Enhanced E-Pub Conversions</h4>
+                            <p>Take your content beyond static pages! Our Enhanced ePub conversion services transform publications into dynamic, interactive experiences with animations, audio narration, and clickable elements.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="conversion-card">
+                            <div class="conversion-icon">
+                                <img src="./images/E-BookDevelopment/PDf.png" alt="PDF Conversion">
+                            </div>
+                            <h4>PDF Conversion</h4>
+                            <p>Our PDF conversion services adapt to your needs, whether converting Word documents, images, scanned files, or other formats into high-quality, print-ready PDFs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="editorial-services-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 editorial-content">
+                    <h3 class="editorial-title" data-aos="fade-up" data-aos-duration="800">Editorial Services</h3>
+                    <div class="title-underline" data-aos="fade-up" data-aos-duration="800"></div>
+                    <p class="editorial-description" data-aos="fade-up" data-aos-duration="800">We offer comprehensive editorial services to ensure outstanding content quality. Our company provides cost-effective strategies through vast facilities. Our professional staff works with you to determine project needs and create personalized service packages.</p>
+                    
+                    <div class="service-lists">
+                        <div class="row">
+                            <div class="col-md-6 service-list" data-aos="fade-up" data-aos-duration="800">
+                                <ul>
+                                    <li><span class="list-icon">✓</span> Manuscript preparation</li>
+                                    <li><span class="list-icon">✓</span> Copy Editing</li>
+                                    <li><span class="list-icon">✓</span> Proof Reading</li>
+                                    <li><span class="list-icon">✓</span> Indexing</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 service-list" data-aos="fade-up" data-aos-duration="800">
+                                <ul>
+                                    <li><span class="list-icon">✓</span> All-text writing</li>
+                                    <li><span class="list-icon">✓</span> Video script writing</li>
+                                    <li><span class="list-icon">✓</span> Accuracy checking</li>
+                                    <li><span class="list-icon">✓</span> Metadata tagging</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-12 editorial-image" data-aos="fade-up" data-aos-duration="800">
+                    <img src="./images/E-BookDevelopment/EDIT_Services.png" alt="Editorial Services" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="editorial-features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="./images/E-BookDevelopment/illustration.png" alt="Illustration Services">
+                        </div>
+                        <h4>Illustration And Artwork</h4>
+                        <p>Illustrations and artwork are essential for engaging readers and facilitating effective learning. Our team designs custom illustrations to meet client requirements, offering services including image resizing, enhancement, color correction, composition retouching, and graphics creation.</p>
+                    </div>
+                </div>
+    
+                <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="./images/E-BookDevelopment/TYpe_Setting.png" alt="Typesetting">
+                        </div>
+                        <h4>Typesetting</h4>
+                        <p>We understand that clean layouts are essential for effective communication. Our experienced team handles a wide range of typesetting projects, from conventional to complex designs. We utilize industry-standard software like InDesign to create print-ready page layouts.</p>
+                    </div>
+                </div>
+    
+                <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="./images/E-BookDevelopment/Copy_EDit.png" alt="Copy Editing">
+                        </div>
+                        <h4>Copy Editing</h4>
+                        <p>Careful proofreading and editing are crucial for accurate book rendition. Our team of trained proofreaders meticulously checks for grammatical and spelling errors, ensuring your content meets the highest standards of quality and professionalism.</p>
+                    </div>
+                </div>
+    
+                <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="./images/E-BookDevelopment/Indexing.png" alt="Indexing Services">
+                        </div>
+                        <h4>Indexing</h4>
+                        <p>The primary purpose of indexing is to highlight essential content while minimizing irrelevant segments. Our team efficiently handles book-indexing projects of any length and complexity, creating organized, user-friendly indexes that enhance your publication's value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  sec 2 and 3 c completed -->
+
+
+    <section class="accessibility-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 accessibility-intro" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="section-title">Accessibility / XML Conversion</h2>
+                    <div class="title-divider" data-aos="fade-up" data-aos-duration="800"></div>
+                    <p class="section-description" data-aos="fade-up" data-aos-duration="800">
+                        Digital documents are widely used for information sharing, typically in PDF format. Creating accessible PDFs ensures these documents are usable by people with special needs, including those using assistive technologies. Making PDFs ADA-compliant is also legally required by accessibility guidelines.
+                    </p>
+                    <div class="accessibility-hero-image">
+                        <img src="./images/E-BookDevelopment/XML_COnversion_body.png" alt="Accessibility Conversion Process" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="accessibility-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="./images/E-BookDevelopment/PDF_Accessibility.png" alt="PDF Accessibility">
+                            </div>
+                            <h3>PDF Accessibility</h3>
+                            <p>Ensure your documents are inclusive and compliant with global accessibility standards. Our PDF accessibility services create files usable by individuals with disabilities, meeting legal requirements and enhancing user experience.</p>
+                            <ul class="feature-list">
+                                <li>Adding tags for logical reading order</li>
+                                <li>Providing alternative text for images</li>
+                                <li>Ensuring proper headings, links, and tables</li>
+                                <li>Making forms fillable and interactive</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="./images/E-BookDevelopment/E-PUB_Accessibility.png" alt="EPUB Accessibility">
+                            </div>
+                            <h3>EPUB Accessibility</h3>
+                            <p>Make your digital publications accessible to everyone. Our ePub accessibility services create and optimize ePubs that comply with global accessibility standards, enhancing usability and reaching broader audiences.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="./images/E-BookDevelopment/HTMl_COnversion.png" alt="HTML Conversion">
+                            </div>
+                            <h3>HTML Conversion</h3>
+                            <p>Unlock your content's full potential with our HTML conversion services. Whether migrating legacy documents or optimizing for modern platforms, we provide precise, reliable solutions tailored to your needs.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <img src="./images/E-BookDevelopment/XML_COnversion.png" alt="XML Conversion">
+                            </div>
+                            <h3>XML Conversion</h3>
+                            <p>We transform unstructured content into XML, enabling seamless data exchange, enhanced usability, and compliance with modern digital standards for businesses and organizations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="dtb-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 dtb-intro">
+                    <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">DTB Publishing</h2>
+                    <div class="title-divider" data-aos="fade-up" data-aos-duration="800"></div>
+                    <p class="section-description" data-aos="fade-up" data-aos-duration="800">
+                        Our experienced team manages the entire eBook production process from content presentation and encoding to HTML5/CSS3 implementation, editing, and image optimization.
+                    </p>
+                    <div class="dtb-hero-image" data-aos="fade-up" data-aos-duration="800">
+                        <img src="./images/E-BookDevelopment/DTB_Publishing.png" alt="DTB Publishing Process" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="dtb-tools">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="tool-card">
+                            <div class="tool-icon pulse-animation">
+                                <img src="./images/E-BookDevelopment/INDESIGN.png" alt="InDesign">
+                            </div>
+                            <h3>InDesign</h3>
+                            <p>Our experienced team uses InDesign to create flyers, brochures, magazines, newspapers, and books that can be shared in both digital and print formats with professional quality.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <img src="./images/E-BookDevelopment/Illustration_ADOPE.png" alt="Illustrator">
+                            </div>
+                            <h3>Illustrator</h3>
+                            <p>Our Illustrator experts create various digital and printed images including cartoons, charts, diagrams, graphs, and logos with an intuitive user interface.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <img src="./images/E-BookDevelopment/PhotoShop.png" alt="Photoshop">
+                            </div>
+                            <h3>Photoshop</h3>
+                            <p>Our Photoshop specialists handle photo editing, creation, website design, and video editing with professional expertise and creative vision.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="tool-card">
+                            <div class="tool-icon pulse-animation">
+                                <img src="./images/E-BookDevelopment/Frame_Maker.png" alt="FrameMaker">
+                            </div>
+                            <h3>FrameMaker</h3>
+                            <p>Our trained FrameMaker team publishes multilingual technical content across mobile, web, desktop, and print with crisp, clean formatting.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="tool-card">
+                            <div class="tool-icon pulse-animation">
+                                <img src="./images/E-BookDevelopment/PageMaker.png" alt="PageMaker">
+                            </div>
+                            <h3>PageMaker</h3>
+                            <p>Our creative team uses PageMaker, the renowned desktop publishing software, to develop innovative print media layouts with professional precision.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <img src="./images/E-BookDevelopment/MathMl.png" alt="MathML">
+                            </div>
+                            <h3>MathML</h3>
+                            <p>Our MathML experts create machine-readable formats for mathematical and scientific content, enabling accurate display on the web and digital platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="proofreading-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 proofreading-content">
+                    <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Extensive Proofreading</h2>
+                    <div class="title-divider" data-aos="fade-up" data-aos-duration="800"></div>
+                    <p class="section-description" data-aos="fade-up" data-aos-duration="800">
+                        We believe a book isn't complete until you're satisfied. Our team of proofreaders and copyeditors thoroughly checks every book to identify and correct errors, ensuring 100% satisfaction with the final product.
+                    </p>
+                    <div class="proofreading-image" data-aos="fade-up" data-aos-duration="800">
+                        <img src="./images/E-BookDevelopment/amico.png" alt="Proofreading Process" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="footer-section ">
+        <div>
+            <svg   width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-350">
+                <style>
+                .path-2{
+                  animation:pathAnim-2 6s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                }
+                @keyframes pathAnim-2{
+                  0%{
+                    d: path("M 0,400 L 0,275 C 58.06410256410257,291.65128205128207 116.12820512820514,308.30256410256413 199,299 C 281.87179487179486,289.69743589743587 389.5512820512821,254.44102564102565 481,248 C 572.4487179487179,241.55897435897435 647.6666666666666,263.93333333333334 714,266 C 780.3333333333334,268.06666666666666 837.7820512820514,249.82564102564103 927,245 C 1016.2179487179486,240.17435897435897 1137.2051282051282,248.76410256410253 1228,256 C 1318.7948717948718,263.23589743589747 1379.397435897436,269.1179487179487 1440,275 L 1440,400 L 0,400 Z");
+                  }
+                  25%{
+                    d: path("M 0,400 L 0,275 C 94.8179487179487,275.62307692307695 189.6358974358974,276.24615384615385 263,285 C 336.3641025641026,293.75384615384615 388.27435897435896,310.6384615384615 451,303 C 513.725641025641,295.3615384615385 587.2666666666667,263.2 677,260 C 766.7333333333333,256.8 872.6589743589741,282.5615384615384 972,292 C 1071.341025641026,301.4384615384616 1164.097435897436,294.55384615384617 1241,289 C 1317.902564102564,283.44615384615383 1378.9512820512819,279.2230769230769 1440,275 L 1440,400 L 0,400 Z");
+                  }
+                  50%{
+                    d: path("M 0,400 L 0,275 C 60.81282051282051,250.57179487179485 121.62564102564102,226.14358974358973 204,238 C 286.374358974359,249.85641025641027 390.31025641025644,297.99743589743593 466,303 C 541.6897435897436,308.00256410256407 589.1333333333333,269.8666666666666 679,252 C 768.8666666666667,234.13333333333338 901.1564102564103,236.53589743589748 983,246 C 1064.8435897435897,255.46410256410252 1096.2410256410255,271.98974358974357 1164,278 C 1231.7589743589745,284.01025641025643 1335.8794871794871,279.50512820512824 1440,275 L 1440,400 L 0,400 Z");
+                  }
+                  75%{
+                    d: path("M 0,400 L 0,275 C 89.46923076923076,269.00256410256407 178.93846153846152,263.0051282051282 254,268 C 329.0615384615385,272.9948717948718 389.71538461538466,288.9820512820513 460,298 C 530.2846153846153,307.0179487179487 610.1999999999999,309.06666666666666 686,308 C 761.8000000000001,306.93333333333334 833.4846153846154,302.75128205128203 922,304 C 1010.5153846153846,305.24871794871797 1115.8615384615384,311.9282051282051 1205,308 C 1294.1384615384616,304.0717948717949 1367.0692307692307,289.5358974358975 1440,275 L 1440,400 L 0,400 Z");
+                  }
+                  100%{
+                    d: path("M 0,400 L 0,275 C 58.06410256410257,291.65128205128207 116.12820512820514,308.30256410256413 199,299 C 281.87179487179486,289.69743589743587 389.5512820512821,254.44102564102565 481,248 C 572.4487179487179,241.55897435897435 647.6666666666666,263.93333333333334 714,266 C 780.3333333333334,268.06666666666666 837.7820512820514,249.82564102564103 927,245 C 1016.2179487179486,240.17435897435897 1137.2051282051282,248.76410256410253 1228,256 C 1318.7948717948718,263.23589743589747 1379.397435897436,269.1179487179487 1440,275 L 1440,400 L 0,400 Z");
+                  }
+                }</style>
+                <path d="M 0,400 L 0,275 C 58.06410256410257,291.65128205128207 116.12820512820514,308.30256410256413 199,299 C 281.87179487179486,289.69743589743587 389.5512820512821,254.44102564102565 481,248 C 572.4487179487179,241.55897435897435 647.6666666666666,263.93333333333334 714,266 C 780.3333333333334,268.06666666666666 837.7820512820514,249.82564102564103 927,245 C 1016.2179487179486,240.17435897435897 1137.2051282051282,248.76410256410253 1228,256 C 1318.7948717948718,263.23589743589747 1379.397435897436,269.1179487179487 1440,275 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#e2e8f0" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-2"></path></svg>
+        </div>
+        <footer class=" relative bg-blueGray-200 pt-0 pb-6">
+        
+            <div style="max-width: 1400px; width: 100%;" class="container  px-0">
+              <div style="gap: 50px;" class="flex  flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-4/12  p-4">
+                    <!-- <h4 class="text-3xl fonat-semibold text-blueGray-700">DCI Technologies</h4> -->
+                    <img style=" width: 80px; height: auto; margin-bottom: 10px;" src="./images/Yellow_and_Grey_Square_Business_Logo.png" alt="">
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600  ">We provide innovative IT and e-Publishing solutions that help businesses thrive in the digital world. Our expert team delivers tailored services to drive growth, improve performance, and achieve measurable results.</h5>
+                <!-- <h5  class="text-lg mt-3 mb-2 text-blueGray-600 sm:w-12/12 md:w-8/12 lg:w-6/12" >DCI Technologies is a leading provider in IT and e-Publishing services.</h5> -->
+                <div class="flex mt-6 lg:mb-0 mb-6">
+                    <a style="text-decoration: none;" href="mailto:contact@dcitechnologies.in"  class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2"><i class="fa-regular fa-envelope" id="email-icon"></i></a>
+                   <a style="text-decoration: none;" href="https://www.facebook.com/profile.php?id=61563465081916" class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2">
+                   <i class="fab fa-facebook-square"></i>
+                 </a>            
+                 
+                 <a style="text-decoration: none;" href="https://www.linkedin.com/company/105057658/admin/dashboard/" class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2">
+                   <i style="color: #0A66C2;" class="fa-brands fa-linkedin-in"></i>
+                 </a>
+          
+                 <a style="text-decoration: none;" href="https://www.instagram.com/dcitechnologiesdgl?igsh=MWdoZWdlNm1lMDh2eQ==" class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2">
+                   <i class="fa-brands fa-instagram" id="instagram-icon"></i>
+                 </a>
+          
+               </div>
+                </div>
+                <div class="w-full lg:w-3/12 px-4">
+                    
+                  <h4 class="text-3xl fonat-semibold text-blueGray-700 mb-6">Let's keep in touch!</h4>
+                  <h5 class="text-lg mt-0 mb-2 text-blueGray-600 ">
+                     8/83A,
+                    Anna Nagar, Gopalpatti,
+                    Dindigul,
+                    Tamilnadu. India - 624308 
+                  <br> 
+                    +91-9698182490,
+                    +91-6382996723
+                <br>
+                    contact@dcitechnologies.in
+                <br>
+                    info@dcitechnologies.in
+                </h5>
+        
+                </div>
+                <div class="w-full lg:w-4/12  px-4">
+                  <div class="flex flex-wrap items-top mb-6">
+                    <div class="w-full lg:w-4/12 ">
+                      <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-3">Services</span>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a  class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm " href="./web_development.html"><i class="fa-solid fa-window-maximize"></i> Web Development</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./mobile-app-development.html"><i class="fa-solid fa-cubes"></i> App Development</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./digital-marketing.html"><i class="fa-solid fa-envelopes-bulk"></i> Digital Marketing</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./seo.html"><i class="fa-solid fa-globe"></i> SEO</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./e-pub-development.html"><i class="fa-solid fa-code"></i> E-Publishing</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="./ui-ux-desinging.html"><i class="fa-solid fa-compass-drafting"></i> Design Services</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="w-full lg:w-4/12  ml-auto">
+                      <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-3">Quick Links</span>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./e-pub-development.html"><i class="fa-solid fa-code"></i> E-Publish</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./about.html"><i class="fa-solid fa-users-line"></i> About Us</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./career.html"><i class="fa-solid fa-users-gear"></i> Career </a>
+                        </li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+              <hr class="my-6 border-blueGray-300">
+              <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+                  <div class="text-sm text-blueGray-500 font-semibold py-1">
+                    Copyright © <span id="get-current-year">2024</span><a href="#" class="text-blueGray-500 hover:text-gray-800" target="_blank"> DCI Technologies.</a>
+                    <a href="#" class="text-blueGray-500 hover:text-blueGray-800">All rights reserved.</a>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const toggler = document.querySelector('.pnb-toggler');
+          const navContainer = document.querySelector('.pnb-nav-container');
+          
+          // Toggle mobile menu
+          toggler.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navContainer.classList.toggle('active');
+          });
+          
+          // Close dropdowns when clicking outside
+          document.addEventListener('click', function(e) {
+            if (!e.target.closest('.pnb-nav-item') && !e.target.closest('.pnb-toggler')) {
+              const openDropdowns = document.querySelectorAll('.pnb-mega-dropdown, .pnb-mega-menu');
+              openDropdowns.forEach(dropdown => {
+                dropdown.style.display = 'none';
+              });
+            }
+          });
+          
+          // Toggle dropdowns on mobile
+          const navItems = document.querySelectorAll('.pnb-nav-item');
+          navItems.forEach(item => {
+            const link = item.querySelector('.pnb-nav-link');
+            const dropdown = item.querySelector('.pnb-mega-dropdown, .pnb-mega-menu');
+            
+            if (dropdown) {
+              link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 992) {
+                  e.preventDefault();
+                  const isOpen = dropdown.style.display === 'block';
+                  
+                  // Close all other dropdowns
+                  document.querySelectorAll('.pnb-mega-dropdown, .pnb-mega-menu').forEach(d => {
+                    if (d !== dropdown) d.style.display = 'none';
+                  });
+                  
+                  // Toggle current dropdown
+                  dropdown.style.display = isOpen ? 'none' : 'block';
+                }
+              });
+            }
+          });
+        });
+        </script>
+</body>
+
+</html>

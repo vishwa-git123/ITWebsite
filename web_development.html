@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDevelopment</title>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="https://kit.fontawesome.com/200f14c6fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/webdevelopment.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+ 
+  <header class="pnb-header">
+    <div class="pnb-container">
+      <nav class="pnb-navbar">
+        <!-- Logo -->
+        <div class="pnb-brand">
+          <a href="#" class="pnb-logo-link">
+            <img src="./images/Yellow_and_Grey_Square_Business_Logo.png" alt="Company Logo" class="pnb-logo">
+          </a>
+          <button class="pnb-toggler" aria-label="Toggle navigation">
+            <span class="pnb-toggler-icon"></span>
+          </button>
+        </div>
+  
+        <!-- Main Navigation -->
+        <div class="pnb-nav-container">
+          <ul class="pnb-nav-list">
+            <!-- Home -->
+            <li class="pnb-nav-item">
+              <a href="./index.html" class="pnb-nav-link">HOME</a>
+              <div class="pnb-mega-dropdown">
+                <div class="pnb-dropdown-content">
+                  <div class="pnb-dropdown-preview">
+                    <img src="./navbar/home-screen-nav-bar.png" alt="Home" class="pnb-dropdown-img">
+                  </div>
+                  <div class="pnb-dropdown-text">
+                    <p>Innovative IT & e-Publishing Solutions for Business Growth. Expert team, tailored services, measurable results.</p>
+                    <a href="./index.html" class="pnb-dropdown-btn">Explore Home</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <!-- About -->
+            <li class="pnb-nav-item">
+              <a href="./about.html" class="pnb-nav-link">ABOUT</a>
+              <div class="pnb-mega-dropdown">
+                <div class="pnb-dropdown-content">
+                  <div class="pnb-dropdown-preview">
+                    <img src="./navbar/About-Nav-Bar.png" alt="About" class="pnb-dropdown-img">
+                  </div>
+                  <div class="pnb-dropdown-text">
+                    <p>We offer IT and ePublishing solutions that help businesses thrive in the digital world, driving growth, efficiency, and long-term success.</p>
+                    <a href="./about.html" class="pnb-dropdown-btn">Learn About Us</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <!-- Services Mega Menu -->
+            <li class="pnb-nav-item pnb-nav-dropdown">
+              <a href="#" class="pnb-nav-link">SERVICES <span class="pnb-dropdown-arrow">⌄</span></a>
+              <div class="pnb-mega-menu">
+                <div class="pnb-mega-grid">
+                  <!-- Web Development -->
+                  <div class="pnb-service-card">
+                    <a href="./web_development.html" class="pnb-service-link">
+                      <div class="pnb-service-icon">
+                        <img src="./navbar/Web-Development-Nav-Bar.png" alt="Web Development" class="pnb-service-img">
+                      </div>
+                      <h4 class="pnb-service-title">Web Development</h4>
+                      <p class="pnb-service-desc">At DCI Technologies, we create modern, high-performing websites tailored to your business needs.</p>
+                      <span class="pnb-service-arrow">→</span>
+                    </a>
+                  </div>
+  
+                  <!-- App Development -->
+                  <div class="pnb-service-card">
+                    <a href="./mobile-app-development.html" class="pnb-service-link">
+                      <div class="pnb-service-icon">
+                        <img src="./navbar/mobile-development-nav-bar.png" alt="App Development" class="pnb-service-img">
+                      </div>
+                      <h4 class="pnb-service-title">App Development</h4>
+                      <p class="pnb-service-desc">We develop advanced mobile and web applications that enhance user engagement and drive business growth.</p>
+                      <span class="pnb-service-arrow">→</span>
+                    </a>
+                  </div>
+  
+                  <!-- Digital Marketing -->
+                  <div class="pnb-service-card">
+                    <a href="./digital-marketing.html" class="pnb-service-link">
+                      <div class="pnb-service-icon">
+                        <img src="./navbar/digital-marketing-nav-bar.png" alt="Digital Marketing" class="pnb-service-img">
+                      </div>
+                      <h4 class="pnb-service-title">Digital Marketing</h4>
+                      <p class="pnb-service-desc">We create tailored digital marketing strategies that connect your brand with the right audience.</p>
+                      <span class="pnb-service-arrow">→</span>
+                    </a>
+                  </div>
+  
+                  <!-- Design Services -->
+                  <div class="pnb-service-card">
+                    <a href="./ui-ux-desinging.html" class="pnb-service-link">
+                      <div class="pnb-service-icon">
+                        <img src="./navbar/Designs-Nav-Bar.png" alt="Design Services" class="pnb-service-img">
+                      </div>
+                      <h4 class="pnb-service-title">Design Services</h4>
+                      <p class="pnb-service-desc">Transform Your Ideas into Stunning Visuals and accelerate your success.</p>
+                      <span class="pnb-service-arrow">→</span>
+                    </a>
+                  </div>
+  
+                  <!-- SEO Marketing -->
+                  <div class="pnb-service-card">
+                    <a href="./seo.html" class="pnb-service-link">
+                      <div class="pnb-service-icon">
+                        <img src="./navbar/Seo-Nav-bar.png" alt="SEO Marketing" class="pnb-service-img">
+                      </div>
+                      <h4 class="pnb-service-title">SEO Marketing</h4>
+                      <p class="pnb-service-desc">We use proven SEO strategies to boost your online visibility and drive measurable conversions.</p>
+                      <span class="pnb-service-arrow">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <!-- E-Publishing -->
+            <li class="pnb-nav-item">
+              <a href="./e-pub-development.html" class="pnb-nav-link">E-PUBLISHING</a>
+              <div class="pnb-mega-dropdown">
+                <div class="pnb-dropdown-content">
+                  <div class="pnb-dropdown-preview">
+                    <img src="./navbar/Web-Development-Nav-Bar.png" alt="E-Publishing" class="pnb-dropdown-img">
+                  </div>
+                  <div class="pnb-dropdown-text">
+                    <p>We help businesses and authors publish, distribute, and monetize digital content, delivering impactful solutions for eBooks, magazines, and multimedia.</p>
+                    <a href="./e-pub-development.html" class="pnb-dropdown-btn">Discover E-Publishing</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <!-- Career -->
+            <li class="pnb-nav-item">
+              <a href="./career.html" class="pnb-nav-link">CAREER</a>
+              <div class="pnb-mega-dropdown">
+                <div class="pnb-dropdown-content">
+                  <div class="pnb-dropdown-preview">
+                    <img src="./navbar/career-Nav-Bar.png" alt="Career" class="pnb-dropdown-img">
+                  </div>
+                  <div class="pnb-dropdown-text">
+                    <p>Join our team at DCI Technologies! We're looking for passionate individuals to help drive innovation in IT, ePublishing, and digital solutions.</p>
+                    <a href="./career.html" class="pnb-dropdown-btn">View Careers</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <!-- Contact -->
+            <li class="pnb-nav-item">
+              <a href="./contact.html" class="pnb-nav-link">CONTACT</a>
+              <div class="pnb-mega-dropdown">
+                <div class="pnb-dropdown-content">
+                  <div class="pnb-dropdown-preview">
+                    <img src="./navbar/Contact--Nav-Bar.png" alt="Contact" class="pnb-dropdown-img">
+                  </div>
+                  <div class="pnb-dropdown-text">
+                    <p>Get in touch with DCI Technologies! We'd love to hear from you. Whether you have questions or need support, our team is here to help.</p>
+                    <a href="./contact.html" class="pnb-dropdown-btn">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+  
+          <!-- CTA Button -->
+          <div class="pnb-cta">
+            <a href="./contact.html" class="pnb-cta-btn">START WITH US</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- header completed -->
+
+  <!-- header completed -->
+
+
+
+    <!-- sec 1 start here -->
+    <section class="pwh-header-section">
+      <!-- Background with Gradient Overlay -->
+      <div class="pwh-background-container">
+        <img src="./images/WebDevelopment/WebDevHeaderBack.png" alt="Abstract technology background" class="pwh-background-image">
+        <div class="pwh-gradient-overlay"></div>
+      </div>
+    
+      <!-- Content Container -->
+      <div class="pwh-content-container">
+        <div class="pwh-content-wrapper">
+          <!-- Text Content -->
+          <div class="pwh-text-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            <h1 class="pwh-main-heading">
+              Build Your <span class="pwh-highlight">Digital Presence</span><br>
+              With Custom Web Development
+            </h1>
+            <p class="pwh-subheading">
+              Your website is the cornerstone of your digital presence. At DCI Technologies, we specialize in building modern, high-performing websites that are tailored to your business needs and designed to leave a lasting impression.
+            </p>
+            <div class="pwh-cta-buttons">
+              <a href="./contact" class="pwh-primary-button">Get Started</a>
+              <a href="#portfolio" class="pwh-secondary-button">View Our Work</a>
+            </div>
+          </div>
+    
+          <!-- Banner Image -->
+          <!-- <div class="pwh-banner-image" data-aos="zoom-in-up" data-aos-duration="1000">
+            <img src="./images/WebDevelopment/WebDevelopmentBanner.png" alt="Web development illustration" class="pwh-feature-image">
+          </div>
+        </div> -->
+      </div>
+    
+      <!-- Decorative Elements -->
+      <div class="pwh-decoration pwh-decoration-1"></div>
+      <div class="pwh-decoration pwh-decoration-2"></div>
+      <div class="pwh-decoration pwh-decoration-3"></div>
+    </section>
+    <!-- sec 1 complete here -->
+
+<!--  sec 2 start here -->
+
+<section class="pws-web-services">
+  <div class="pws-container">
+    <div class="pws-content-wrapper">
+      <!-- Services Content -->
+      <div class="pws-services-content" data-aos="zoom-in">
+        <div class="pws-main-card">
+          <h2 class="pws-main-title">WEB <span class="pws-title-highlight">DEVELOPMENT</span></h2>
+          <p class="pws-main-description">
+            We offer comprehensive web development solutions that ensure cross-browser and cross-device
+            compatibility with mobile responsiveness. From basic website designs and CMS to complex
+            business applications, we customize solutions to fit your needs.
+          </p>
+        </div>
+
+        <div class="pws-services-list">
+          <h3 class="pws-services-title">Our Web Development Services</h3>
+          
+          <div class="pws-services-grid">
+            <div class="pws-service-item">
+              <div class="pws-service-icon">
+                <svg viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <path fill="currentColor" d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"></path>
+                </svg>
+              </div>
+              <h4 class="pws-service-name">Custom Application Development</h4>
+            </div>
+            
+            <div class="pws-service-item">
+              <div class="pws-service-icon">
+                <svg viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m0 2v14h14V5H5m6 2h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2m0 2v6h2V9h-2z"></path>
+                </svg>
+              </div>
+              <h4 class="pws-service-name">Content Management System (CMS)</h4>
+            </div>
+            
+            <div class="pws-service-item">
+              <div class="pws-service-icon">
+                <svg viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <path fill="currentColor" d="M7.5 8l4.5 2.5 4.5-2.5M7.5 16l4.5 2.5 4.5-2.5"></path>
+                </svg>
+              </div>
+              <h4 class="pws-service-name">Ecommerce Development</h4>
+            </div>
+            
+            <div class="pws-service-item">
+              <div class="pws-service-icon">
+                <svg viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"></path>
+                </svg>
+              </div>
+              <h4 class="pws-service-name">MERN Stack Development</h4>
+            </div>
+            
+            <div class="pws-service-item">
+              <div class="pws-service-icon">
+                <svg viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"></path>
+                </svg>
+              </div>
+              <h4 class="pws-service-name">Social Media Apps</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup Image -->
+      <div class="pws-mockup-container" data-aos="flip-left" data-aos-duration="1000">
+        <div class="pws-mockup-wrapper">
+          <img src="./images/WebDevelopment/Silver-24‑inch-iMac-Mockup.png" alt="iMac displaying web development work" class="pws-mockup-image">
+          <div class="pws-mockup-decoration"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- sec 2 end here -->
+
+    <section class="pes-expertise-section">
+      <div class="pes-header">
+        <h2 class="pes-title">Our <span class="pes-highlight">Expertise</span></h2>
+        <div class="pes-title-decoration"></div>
+      </div>
+    
+      <div class="pes-cards-container">
+        <!-- High Performance Card -->
+        <div class="pes-card" data-aos="zoom-in" data-aos-duration="600">
+          <div class="pes-card-inner">
+            <div class="pes-card-icon">
+              <img src="./images/WebDevelopment/Speed-Icon.png" alt="High Performance Icon" class="pes-icon">
+            </div>
+            <h3 class="pes-card-title">High Performance</h3>
+            <p class="pes-card-text">
+              Ready to take your website, app, or digital platform to the next level? Our high-performance solutions are 
+              designed to help you achieve exceptional results. Get in touch today to discuss how we can optimize your 
+              business for growth, speed, and scalability.
+            </p>
+            <div class="pes-card-hover"></div>
+          </div>
+        </div>
+    
+        <!-- Responsive Card -->
+        <div class="pes-card" data-aos="zoom-in" data-aos-duration="600">
+          <div class="pes-card-inner">
+            <div class="pes-card-icon">
+              <img src="./images/WebDevelopment/mdi_responsive.png" alt="Responsive Design Icon" class="pes-icon">
+            </div>
+            <h3 class="pes-card-title">100% Responsive</h3>
+            <p class="pes-card-text">
+              Responsive design creates a better user experience, which leads to higher conversion rates, as users are
+              more likely to stay and take action on a site that works smoothly on their device.
+            </p>
+            <div class="pes-card-hover"></div>
+          </div>
+        </div>
+    
+        <!-- Easy to Use Card -->
+        <div class="pes-card" data-aos="zoom-in" data-aos-duration="600">
+          <div class="pes-card-inner">
+            <div class="pes-card-icon">
+              <img src="./images/WebDevelopment/fluent-mdl2_add-in.png" alt="Easy to Use Icon" class="pes-icon">
+            </div>
+            <h3 class="pes-card-title">Easy to Use</h3>
+            <p class="pes-card-text">
+              Easy-to-use interfaces ensure that visitors or users can quickly learn and navigate your platform, 
+              reducing frustration and encouraging frequent use.
+            </p>
+            <div class="pes-card-hover"></div>
+          </div>
+        </div>
+    
+        <!-- Support Card -->
+        <div class="pes-card" data-aos="zoom-in" data-aos-duration="600">
+          <div class="pes-card-inner">
+            <div class="pes-card-icon">
+              <img src="./images/WebDevelopment/fluent_people-call-20-regular.png" alt="24/7 Support Icon" class="pes-icon">
+            </div>
+            <h3 class="pes-card-title">24x7 Support</h3>
+            <p class="pes-card-text">
+              No matter where you are in the world or what time zone you're in, our 24/7 support ensures that you 
+              always have access to the help you need.
+            </p>
+            <div class="pes-card-hover"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  sc 3 completed -->
+
+
+
+    <section class="pds-design-showcase">
+      <div class="pds-container">
+        <!-- Section Header -->
+        <div class="pds-header" data-aos="zoom-in">
+          <h2 class="pds-title">Check Out Our <span class="pds-highlight">Stunning Website Designs</span></h2>
+          <p class="pds-subtitle">
+            Explore our portfolio of Shopify designs and discover how we turn e-commerce visions into
+            reality. Each project highlights our expertise in crafting visually captivating and
+            high-performing online stores.
+          </p>
+        </div>
+    
+        <!-- Design Gallery -->
+        <div class="pds-gallery">
+          <!-- Design Item 1 -->
+          <div class="pds-design-item" data-aos="fade-right">
+            <div class="pds-image-container">
+              <img src="./images/WebDevelopment/Desktop-7.png" alt="E-commerce Website Design" class="pds-design-image">
+              <div class="pds-overlay">
+                <div class="pds-overlay-content">
+                  <h3 class="pds-design-title">Modern E-commerce Design</h3>
+                  <a href="#" class="pds-view-button">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Design Item 2 -->
+          <div class="pds-design-item" data-aos="fade-left">
+            <div class="pds-image-container">
+              <img src="./images/WebDevelopment/Desktop-8.png" alt="Shopify Store Design" class="pds-design-image">
+              <div class="pds-overlay">
+                <div class="pds-overlay-content">
+                  <h3 class="pds-design-title">Shopify Store Design</h3>
+                  <a href="#" class="pds-view-button">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Design Item 3 -->
+          <div class="pds-design-item" data-aos="fade-up">
+            <div class="pds-image-container">
+              <img src="./images/WebDevelopment/Desktop-9.png" alt="Responsive Web Design" class="pds-design-image">
+              <div class="pds-overlay">
+                <div class="pds-overlay-content">
+                  <h3 class="pds-design-title">Responsive Web Design</h3>
+                  <a href="#" class="pds-view-button">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Design Item 4 -->
+          <div class="pds-design-item" data-aos="fade-up">
+            <div class="pds-image-container">
+              <img src="./images/WebDevelopment/Sample-Website.png" alt="Sample Website Design" class="pds-design-image">
+              <div class="pds-overlay">
+                <div class="pds-overlay-content">
+                  <h3 class="pds-design-title">Sample Website Design</h3>
+                  <a href="#" class="pds-view-button">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Design Item 5 -->
+          <div class="pds-design-item" data-aos="zoom-in">
+            <div class="pds-image-container">
+              <img src="./images/WebDevelopment/E-commerce-SIte.png" alt="E-commerce Site Design" class="pds-design-image">
+              <div class="pds-overlay">
+                <div class="pds-overlay-content">
+                  <h3 class="pds-design-title">E-commerce Site</h3>
+                  <a href="#" class="pds-view-button">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- CTA Item -->
+          <div class="pds-cta-item" data-aos="zoom-in">
+            <div class="pds-cta-container">
+              <h3 class="pds-cta-title">Ready for Your Own Stunning Design?</h3>
+              <p class="pds-cta-text">Let's create something amazing together</p>
+              <a href="#contact" class="pds-cta-button">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  sec 4 completed -->
+
+    <section class="pts-technologies-section">
+      <div class="pts-container">
+        <div class="pts-header">
+          <h2 class="pts-title">Technologies <span class="pts-title-highlight">We Use</span></h2>
+          <div class="pts-title-decoration"></div>
+          <p class="pts-subtitle">We leverage cutting-edge technologies to build powerful, scalable, and future-proof digital solutions</p>
+        </div>
+    
+        <div class="pts-tech-grid">
+          <!-- Row 1 -->
+          <div class="pts-tech-card" data-aos="zoom-in">
+            <div class="pts-tech-logo-container">
+              <img src="./images/WebDevelopment/logos_html-5.png" alt="HTML5" class="pts-tech-logo">
+            </div>
+            <span class="pts-tech-name">HTML5</span>
+          </div>
+    
+          <div class="pts-tech-card" data-aos="zoom-in">
+            <div class="pts-tech-logo-container">
+              <img src="./images/WebDevelopment/logos_css-3.png" alt="CSS3" class="pts-tech-logo">
+            </div>
+            <span class="pts-tech-name">CSS3</span>
+          </div>
+    
+          <div class="pts-tech-card" data-aos="zoom-in">
+            <div class="pts-tech-logo-container">
+              <img src="./images/WebDevelopment/devicon_bootstrap-wordmark.png" alt="Bootstrap" class="pts-tech-logo">
+            </div>
+            <span class="pts-tech-name">Bootstrap</span>
+          </div>
+    
+          <div class="pts-tech-card" data-aos="zoom-in">
+            <div class="pts-tech-logo-container">
+              <img src="./images/WebDevelopment/skill-icons_javascript.png" alt="JavaScript" class="pts-tech-logo">
+            </div>
+            <span class="pts-tech-name">JavaScript</span>
+          </div>
+    
+          <div class="pts-tech-card" data-aos="zoom-in">
+            <div class="pts-tech-logo-container">
+              <img src="./images/WebDevelopment/devicon_react-wordmark.png" alt="React" class="pts-tech-logo">
+            </div>
+            <span class="pts-tech-name">React</span>
+          </div>
+    
+          <!-- Row 2 -->
+          <div class="pts-tech-card" data-aos="zoom-in">
+            <div class="pts-tech-logo-container">
+              <img src="./images/WebDevelopment/tabler_brand-react-native.png" alt="React Native" class="pts-tech-logo">
+            </div>
+            <span class="pts-tech-name">React Native</span>
+          </div>
+    
+          <div class="pts-tech-card" data-aos="zoom-in">
+            <div class="pts-tech-logo-container">
+              <img src="./images/WebDevelopment/mdi_dot-net.png" alt=".NET" class="pts-tech-logo">
+            </div>
+            <span class="pts-tech-name">.NET</span>
+          </div>
+    
+          <div class="pts-tech-card" data-aos="zoom-in">
+            <div class="pts-tech-logo-container">
+              <img src="./images/WebDevelopment/Node-JS.png" alt="Node.js" class="pts-tech-logo">
+            </div>
+            <span class="pts-tech-name">Node.js</span>
+          </div>
+    
+          <div class="pts-tech-card" data-aos="zoom-in">
+            <div class="pts-tech-logo-container">
+              <img src="./images/WebDevelopment/devicon_python-wordmark.png" alt="Python" class="pts-tech-logo">
+            </div>
+            <span class="pts-tech-name">Python</span>
+          </div>
+    
+          <div class="pts-tech-card" data-aos="zoom-in">
+            <div class="pts-tech-logo-container">
+              <img src="./images/WebDevelopment/logos_mysql.png" alt="MySQL" class="pts-tech-logo">
+            </div>
+            <span class="pts-tech-name">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  sec 5 completed -->
+    <section class="footer-section ">
+        <div>
+            <svg   width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-350">
+                <style>
+                .path-2{
+                  animation:pathAnim-2 6s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                }
+                @keyframes pathAnim-2{
+                  0%{
+                    d: path("M 0,400 L 0,275 C 58.06410256410257,291.65128205128207 116.12820512820514,308.30256410256413 199,299 C 281.87179487179486,289.69743589743587 389.5512820512821,254.44102564102565 481,248 C 572.4487179487179,241.55897435897435 647.6666666666666,263.93333333333334 714,266 C 780.3333333333334,268.06666666666666 837.7820512820514,249.82564102564103 927,245 C 1016.2179487179486,240.17435897435897 1137.2051282051282,248.76410256410253 1228,256 C 1318.7948717948718,263.23589743589747 1379.397435897436,269.1179487179487 1440,275 L 1440,400 L 0,400 Z");
+                  }
+                  25%{
+                    d: path("M 0,400 L 0,275 C 94.8179487179487,275.62307692307695 189.6358974358974,276.24615384615385 263,285 C 336.3641025641026,293.75384615384615 388.27435897435896,310.6384615384615 451,303 C 513.725641025641,295.3615384615385 587.2666666666667,263.2 677,260 C 766.7333333333333,256.8 872.6589743589741,282.5615384615384 972,292 C 1071.341025641026,301.4384615384616 1164.097435897436,294.55384615384617 1241,289 C 1317.902564102564,283.44615384615383 1378.9512820512819,279.2230769230769 1440,275 L 1440,400 L 0,400 Z");
+                  }
+                  50%{
+                    d: path("M 0,400 L 0,275 C 60.81282051282051,250.57179487179485 121.62564102564102,226.14358974358973 204,238 C 286.374358974359,249.85641025641027 390.31025641025644,297.99743589743593 466,303 C 541.6897435897436,308.00256410256407 589.1333333333333,269.8666666666666 679,252 C 768.8666666666667,234.13333333333338 901.1564102564103,236.53589743589748 983,246 C 1064.8435897435897,255.46410256410252 1096.2410256410255,271.98974358974357 1164,278 C 1231.7589743589745,284.01025641025643 1335.8794871794871,279.50512820512824 1440,275 L 1440,400 L 0,400 Z");
+                  }
+                  75%{
+                    d: path("M 0,400 L 0,275 C 89.46923076923076,269.00256410256407 178.93846153846152,263.0051282051282 254,268 C 329.0615384615385,272.9948717948718 389.71538461538466,288.9820512820513 460,298 C 530.2846153846153,307.0179487179487 610.1999999999999,309.06666666666666 686,308 C 761.8000000000001,306.93333333333334 833.4846153846154,302.75128205128203 922,304 C 1010.5153846153846,305.24871794871797 1115.8615384615384,311.9282051282051 1205,308 C 1294.1384615384616,304.0717948717949 1367.0692307692307,289.5358974358975 1440,275 L 1440,400 L 0,400 Z");
+                  }
+                  100%{
+                    d: path("M 0,400 L 0,275 C 58.06410256410257,291.65128205128207 116.12820512820514,308.30256410256413 199,299 C 281.87179487179486,289.69743589743587 389.5512820512821,254.44102564102565 481,248 C 572.4487179487179,241.55897435897435 647.6666666666666,263.93333333333334 714,266 C 780.3333333333334,268.06666666666666 837.7820512820514,249.82564102564103 927,245 C 1016.2179487179486,240.17435897435897 1137.2051282051282,248.76410256410253 1228,256 C 1318.7948717948718,263.23589743589747 1379.397435897436,269.1179487179487 1440,275 L 1440,400 L 0,400 Z");
+                  }
+                }</style>
+                <path d="M 0,400 L 0,275 C 58.06410256410257,291.65128205128207 116.12820512820514,308.30256410256413 199,299 C 281.87179487179486,289.69743589743587 389.5512820512821,254.44102564102565 481,248 C 572.4487179487179,241.55897435897435 647.6666666666666,263.93333333333334 714,266 C 780.3333333333334,268.06666666666666 837.7820512820514,249.82564102564103 927,245 C 1016.2179487179486,240.17435897435897 1137.2051282051282,248.76410256410253 1228,256 C 1318.7948717948718,263.23589743589747 1379.397435897436,269.1179487179487 1440,275 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#e2e8f0" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-2"></path></svg>
+        </div>
+        <footer class=" relative bg-blueGray-200 pt-0 pb-6">
+        
+            <div style="max-width: 1400px; width: 100%;" class="container  px-0">
+              <div style="gap: 50px;" class="flex  flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-4/12  p-4">
+                    <!-- <h4 class="text-3xl fonat-semibold text-blueGray-700">DCI Technologies</h4> -->
+                    <img style=" width: 80px; height: auto; margin-bottom: 10px;" src="./images/Yellow_and_Grey_Square_Business_Logo.png" alt="">
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600  ">We provide innovative IT and e-Publishing solutions that help businesses thrive in the digital world. Our expert team delivers tailored services to drive growth, improve performance, and achieve measurable results.</h5>
+                <!-- <h5  class="text-lg mt-3 mb-2 text-blueGray-600 sm:w-12/12 md:w-8/12 lg:w-6/12" >DCI Technologies is a leading provider in IT and e-Publishing services.</h5> -->
+                <div class="flex mt-6 lg:mb-0 mb-6">
+                    <a style="text-decoration: none;" href="mailto:contact@dcitechnologies.in"  class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2"><i class="fa-regular fa-envelope" id="email-icon"></i></a>
+                   <a style="text-decoration: none;" href="https://www.facebook.com/profile.php?id=61563465081916" class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2">
+                   <i class="fab fa-facebook-square"></i>
+                 </a>            
+                 
+                 <a style="text-decoration: none;" href="https://www.linkedin.com/company/105057658/admin/dashboard/" class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2">
+                   <i style="color: #0A66C2;" class="fa-brands fa-linkedin-in"></i>
+                 </a>
+          
+                 <a style="text-decoration: none;" href="https://www.instagram.com/dcitechnologiesdgl?igsh=MWdoZWdlNm1lMDh2eQ==" class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2">
+                   <i class="fa-brands fa-instagram" id="instagram-icon"></i>
+                 </a>
+          
+               </div>
+                </div>
+                <div class="w-full lg:w-3/12 px-4">
+                    
+                  <h4 class="text-3xl fonat-semibold text-blueGray-700 mb-6">Let's keep in touch!</h4>
+                  <h5 class="text-lg mt-0 mb-2 text-blueGray-600 ">
+                     8/83A,
+                    Anna Nagar, Gopalpatti,
+                    Dindigul,
+                    Tamilnadu. India - 624308 
+                  <br> 
+                    +91-9698182490,
+                    +91-6382996723
+                <br>
+                    contact@dcitechnologies.in
+                <br>
+                    info@dcitechnologies.in
+                </h5>
+        
+                </div>
+                <div class="w-full lg:w-4/12  px-4">
+                  <div class="flex flex-wrap items-top mb-6">
+                    <div class="w-full lg:w-4/12 ">
+                      <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-3">Services</span>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a style="width:132px" class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm " href="./web_development.html"><i class="fa-solid fa-window-maximize"></i> Web Development</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./mobile-app-development.html"><i class="fa-solid fa-cubes"></i> App Development</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./digital-marketing.html"><i class="fa-solid fa-envelopes-bulk"></i> Digital Marketing</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./seo.html"><i class="fa-solid fa-globe"></i> SEO</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./e-pub-development.html"><i class="fa-solid fa-code"></i> E-Publishing</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="./ui-ux-desinging.html"><i class="fa-solid fa-compass-drafting"></i> Design Services</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="w-full lg:w-4/12  ml-auto">
+                      <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-3">Quick Links</span>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./e-pub-development.html"><i class="fa-solid fa-code"></i> E-Publish</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./about.html"><i class="fa-solid fa-users-line"></i> About Us</a>
+                        </li>
+                        <li>
+                          <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-3 text-sm" href="./about.html"><i class="fa-solid fa-users-gear"></i> Career </a>
+                        </li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+              <hr class="my-6 border-blueGray-300">
+              <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+                  <div class="text-sm text-blueGray-500 font-semibold py-1">
+                    Copyright © <span id="get-current-year">2024</span><a href="#" class="text-blueGray-500 hover:text-gray-800" target="_blank"> DCI Technologies.</a>
+                    <a href="#" class="text-blueGray-500 hover:text-blueGray-800">All rights reserved.</a>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggler = document.querySelector('.pnb-toggler');
+      const navContainer = document.querySelector('.pnb-nav-container');
+      
+      // Toggle mobile menu
+      toggler.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navContainer.classList.toggle('active');
+      });
+      
+      // Close dropdowns when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.pnb-nav-item') && !e.target.closest('.pnb-toggler')) {
+          const openDropdowns = document.querySelectorAll('.pnb-mega-dropdown, .pnb-mega-menu');
+          openDropdowns.forEach(dropdown => {
+            dropdown.style.display = 'none';
+          });
+        }
+      });
+      
+      // Toggle dropdowns on mobile
+      const navItems = document.querySelectorAll('.pnb-nav-item');
+      navItems.forEach(item => {
+        const link = item.querySelector('.pnb-nav-link');
+        const dropdown = item.querySelector('.pnb-mega-dropdown, .pnb-mega-menu');
+        
+        if (dropdown) {
+          link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 992) {
+              e.preventDefault();
+              const isOpen = dropdown.style.display === 'block';
+              
+              // Close all other dropdowns
+              document.querySelectorAll('.pnb-mega-dropdown, .pnb-mega-menu').forEach(d => {
+                if (d !== dropdown) d.style.display = 'none';
+              });
+              
+              // Toggle current dropdown
+              dropdown.style.display = isOpen ? 'none' : 'block';
+            }
+          });
+        }
+      });
+    });
+    </script>
+</body>
+
+</html>

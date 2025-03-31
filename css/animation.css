@@ -1,0 +1,56 @@
+@keyframes bounce {  
+    0%, 20%, 50%, 80%, 100% {  
+      transform: translateY(0);  
+    }  
+    40% {  
+      transform: translateY(-30px);  
+    }  
+    60% {  
+      transform: translateY(-15px);  
+    }  
+  }  
+  
+  .bounce-text {  
+    display: inline-block;  
+    animation: bounce 2s infinite;  
+    color: #74BB00;
+    font-size: 4rem;
+  }
+
+  /* bounce completed */
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); /* Scale up */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .pulse-icon {
+    display: inline-block;
+    animation: pulse 1.5s ease-in-out infinite; /* Pulse animation */
+  }
+
+  /* pulse completed */
+
+  
+  /* animation: borderColorAnimation 3s linear infinite;
+  border-image: linear-gradient(90deg, #303030, #fff);
+  border-image-slice: 1; */
+
+/* @keyframes borderColorAnimation {
+  0% {
+      border-image-source: linear-gradient(90deg, #303030, #fff); 
+  }
+  50% {
+      border-image-source: linear-gradient(90deg, #fff, #303030); 
+  }
+  100% {
+      border-image-source: linear-gradient(90deg, #303030, #fff); 
+  }
+} */
